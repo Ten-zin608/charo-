@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Registration Form — Cha་རོ།</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <header>
+      <div class="header-left">
+        <img src="charologo.jpg" alt="Cha Logo" class="logo">
+        <div>
+          <h2>Volunteer Registration Form</h2>
+          <p>RSSC HQ: Thimphu</p>
+          <p>charo25@gmail.com</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="criteria">
+      <h3>Volunteer Criteria</h3>
+      <ul>
+        <li>Must have at least one published case study (attach proof/reference).</li>
+        <li>This is only applicable for those who are interested in doing case studies.</li>
+        <li>Should respect and uphold the principles of RSSC.</li>
+        <li>Service is voluntary (no financial benefits).</li>
+      </ul>
+    </section>
+
+    <section class="personal-info">
+      <h3>Personal Information</h3>
+      <label>Name:</label> <input type="text" name="name"><br>
+      <label>Citizenship/ID No:</label> <input type="text" name="id"><br>
+      <label>Gender:</label>
+      <input type="radio" name="gender"> Male
+      <input type="radio" name="gender"> Female
+      <input type="radio" name="gender"> Other<br>
+      <label>Date of Birth:</label> <input type="date" name="dob"><br>
+      <label>Permanent Address (Village / Gewog / Dzongkhag):</label> <input type="text" name="permanent"><br>
+      <label>Present Address:</label> <input type="text" name="present"><br>
+      <label>Phone/Mobile No:</label> <input type="text" name="phone"><br>
+      <label>Email:</label> <input type="email" name="email"><br>
+    </section>
+
+    <section class="case-study">
+      <h3>Case Study Contributors</h3>
+      <p class="note"><b>Note:</b> This form is only applicable to those who are interested in doing case studies with us.</p>
+      <p>You must adhere to the following criteria:</p>
+
+      <label>Title of Published Case Study:</label> <input type="text"><br>
+      <label>Date of Publication:</label> <input type="date"><br>
+      <label>Journal/Platform/Organization Published With:</label> <input type="text"><br>
+      <label>Link/Reference/Proof:</label> <input type="text"><br>
+
+      <h4>Areas of Interest for Volunteering (tick all that apply):</h4>
+      <label><input type="checkbox"> Elder Health Support</label><br>
+      <label><input type="checkbox"> Counselling & Awareness Programs</label><br>
+      <label><input type="checkbox"> Community Documentation (stories, reports, case studies)</label><br>
+      <label><input type="checkbox"> Other (please specify):</label> <input type="text"><br>
+    </section>
+
+    <section class="declaration">
+      <h3>Declaration</h3>
+      <p>I hereby apply to volunteer with the Royal Society for Senior Citizens (RSSC) as a Case Study Contributor. 
+      I certify that I have at least one case study published and that the information provided above is true. 
+      I agree to serve voluntarily and in alignment with RSSC’s values.</p>
+
+      <label>E-Signature:</label> <input type="text" name="signature"><br>
+      <label>Date:</label> <input type="date" name="date"><br>
+
+      <p class="notice">📧 Notice: We will directly contact you through your email.<br>
+      If you have any questions, kindly email: <b>charo25@gmail.com</b></p>
+    </section>
+
+    <div class="submit-section">
+      <button type="submit" class="submit-btn">Submit</button>
+      <h2>Thank You!</h2>
+    </div>
+  </div>
+</body>
+</html>
