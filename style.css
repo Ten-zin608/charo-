@@ -25,25 +25,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
-  width: 150px;   /* significantly larger now */
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;        /* makes logo circular */
+  object-fit: cover;         /* ensures image fits perfectly */
+  padding: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-
-.logo:hover {
-  transform: scale(1.08);
-}
-
-/* Keep header elements vertically aligned */
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 
 .nav a {
   text-decoration: none;
@@ -627,6 +617,7 @@ body {
   width: 50px;
   height: 50px;
 }
+
 /* health checkup */
 body {
   background: linear-gradient(to bottom right, #d4b9f3, #c8b5ec);
@@ -906,24 +897,14 @@ input[type="time"] {
   text-align: center;
 }
 
-/* ---------- UNIFIED BACK ARROW STYLE ---------- */
 .back-arrow {
   position: absolute;
-  top: 25px;
   left: 25px;
+  top: 20px;
   font-size: 28px;
-  color: #4b1f61;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease, color 0.3s ease;
 }
-
-.back-arrow:hover {
-  transform: translateX(-5px);
-  color: #2a093e;
-}
-
-
 
 .health-container h2 {
   font-size: 30px;
@@ -1688,84 +1669,4 @@ body {
 .back-arrow:hover {
   transform: translateX(-5px);
   color: #240e46;
-}
-
-/* 🌸 Caring Hearts Popup Message */
-.popup-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(60, 20, 100, 0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.popup-box {
-  background-color: #d9c4f5;
-  color: #2b0a4a;
-  padding: 30px 40px;
-  border-radius: 15px;
-  text-align: center;
-  width: 350px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  animation: popIn 0.5s ease;
-}
-
-.popup-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.ok-btn {
-  background-color: #6b46c1;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.ok-btn:hover {
-  background-color: #4b2b8a;
-  transform: scale(1.05);
-}
-
-@keyframes popIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-/* 🌸 Gradient Submit Button */
-.submit-section {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.submit-btn {
-  background: linear-gradient(135deg, #a47ed8, #d3b0f8);
-  color: white;
-  border: none;
-  padding: 12px 40px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 12px rgba(100, 50, 150, 0.3);
-}
-
-.submit-btn:hover {
-  background: linear-gradient(135deg, #8c64d6, #b68ff3);
-  transform: scale(1.08);
-  box-shadow: 0 6px 15px rgba(90, 40, 130, 0.4);
 }
