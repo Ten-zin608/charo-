@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caring Hearts — Cha་རོ།</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <!--  Clickable logo linking to homepage -->
+      <a href="index.html">
+        <img src="charologo.jpg" alt="Cha logo" class="logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html" >Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="awareness.html">Awareness</a>
+        <a href="services.html"class="active">Services</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="form-section">
+    <h1>Health Service Booking Form</h1>
+    <p>RSSC HQ: Thimphu | charo25@gmail.com</p>
+    <p class="form-note">Please fill in the details below to book a service for elders. Ensure all mandatory fields are completed before submission.</p>
+
+    <form>
+      <h3>Patient Information</h3>
+      <label>Name:</label><input type="text" required><br>
+      <label>Age:</label><input type="number" required><br>
+      <label>Citizenship ID:</label><input type="text" required><br>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Other"> Other<br>
+
+      <label>Address:</label><input type="text" required><br>
+      <label>Phone:</label><input type="text" required><br>
+      <label>Email:</label><input type="email"><br>
+
+      <h3>Service Details</h3>
+      <label>Type of Service:</label>
+      <input type="checkbox"> Health Check-up
+      <input type="checkbox"> Counselling
+      <input type="checkbox"> Education Program<br>
+
+      <label>Preferred Date:</label><input type="date"><br>
+      <label>Preferred Time:</label><input type="time"><br>
+
+      <h3>Emergency Contact</h3>
+      <label>Name:</label><input type="text"><br>
+      <label>Phone:</label><input type="text"><br>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <p class="notice">We will contact you through the details you provided. For inquiries: <a href="mailto:charo25@gmail.com">charo25@gmail.com</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Cha་རོ།— All rights reserved</p>
+  </footer>
+</body>
+</html>
